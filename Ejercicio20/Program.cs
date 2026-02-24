@@ -5,6 +5,9 @@ for (int i = 0; i < n; i++)
 {
     Console.WriteLine($"Ingrese un número {i+1}: ");
     int numero = int.Parse(Console.ReadLine());
-   
+    if (numero > 0)
+    {
+        positivos++;
+    }
 }
-
+Console.WriteLine("Cantidad de positivos: "+positivos);
